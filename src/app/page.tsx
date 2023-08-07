@@ -1,12 +1,14 @@
 'use client'
 import React from 'react'
 import styles from './page.module.css'
-import Navbar2 from '@/components/Navbar'
+import Navbar from '@/components/Navbar/Navbar'
+import InfoCard from '@/components/InfoCard/InfoCard'
 
 export default function Home() {
   return (
-    <React.Fragment>
-      <Navbar2></Navbar2>
-    </React.Fragment>
+    <>
+      <Navbar></Navbar>
+      <InfoCard></InfoCard>
+    </>
   )
 }
