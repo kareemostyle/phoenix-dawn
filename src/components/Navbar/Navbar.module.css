@@ -1,5 +1,10 @@
 .navtext {
-    font-family: var(--font-oxygen);
-    font-weight: 700;
-    color: #d62828;
+  font-family: var(--font-oxygen);
+  font-weight: 700;
+  color: #d62828;
+  transition: color 0.5s;
+}
+
+.navtext:hover {
+  color: #fb5607;
 }

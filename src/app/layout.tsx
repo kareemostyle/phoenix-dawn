@@ -1,28 +1,26 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Oxygen } from 'next/font/google'
-
-const oxygen = Oxygen({
-  subsets: ['latin'],
-  weight: '300'
-})
+"use client";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./globals.css";
+import { useEffect } from "react";
+import type { Metadata } from "next";
+import { oxygen400 } from "@/styles/fonts";
 
 export const metadata: Metadata = {
-  title: 'Phoenix Dawn',
-  description: 'Website for the Phoenix Dawn Clan.',
-}
+  title: "Phoenix Dawn",
+  description: "Website for the Phoenix Dawn Clan.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
   return (
     <html lang="en">
-      {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
-      <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"></link>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> */}
-      <body className={`${oxygen.className}`}>{children}</body>
+      <body className={`${oxygen400.className}`}>{children}</body>
     </html>
-  )
+  );
 }

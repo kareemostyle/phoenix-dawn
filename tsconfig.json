@@ -27,6 +27,9 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@/fonts": [
+        "./styles/fonts"
       ]
     },
     "strict": false
