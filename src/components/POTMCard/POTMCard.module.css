@@ -1,0 +1,16 @@
+.cardsettings {
+  background-color: #eb5e28;
+}
+
+.cardtext {
+  color: #001219;
+}
+
+.playertext {
+  font-family: var(--font-oxygen);
+  font-weight: 700;
+}
+
+.shadow {
+  box-shadow: 0px 0px 10px 5px;
+}
