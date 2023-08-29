@@ -4,6 +4,7 @@ import "./globals.css";
 import { useEffect } from "react";
 import type { Metadata } from "next";
 import { oxygen400 } from "@/styles/fonts";
+import Navbar from "@/components/Navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Phoenix Dawn",
@@ -20,7 +21,10 @@ export default function RootLayout({
   }, []);
   return (
     <html lang="en">
-      <body className={`${oxygen400.className}`}>{children}</body>
+      <body className={`${oxygen400.className}`}>
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

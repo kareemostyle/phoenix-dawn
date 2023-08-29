@@ -8,3 +8,12 @@
 .navtext:hover {
   color: #fb5607;
 }
+
+.collapseButton {
+  background-color: #d62828;
+  transition: background-color 0.5s;
+}
+
+.collapseButton:hover {
+  background-color: #fb5607;
+}

@@ -6,11 +6,11 @@ export default function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container">
-          <a className={`navbar-brand ${styles.navtext}`} href="#">
+          <a className={`navbar-brand ${styles.navtext}`} href="/">
             Home
           </a>
           <button
-            className="navbar-toggler"
+            className={`navbar-toggler ${styles.collapseButton}`}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -18,21 +18,20 @@ export default function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className={`navbar-toggler-icon`}></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a
                   className={`nav-link ${styles.navtext}`}
-                  aria-current="page"
-                  href="#"
+                  href="/leaderboards"
                 >
                   Leaderboards
                 </a>
               </li>
               <li className="nav-item">
-                <a className={`nav-link ${styles.navtext}`} href="#">
+                <a className={`nav-link ${styles.navtext}`} href="/stats">
                   Stats
                 </a>
               </li>

@@ -9,10 +9,9 @@ import Announcements from "@/components/Announcements/Announcements";
 export default function Home() {
   return (
     <>
-      <Navbar></Navbar>
+      <Announcements></Announcements>
       <POTMCard player={"Sgt_Chedders"}></POTMCard>
       <Events></Events>
-      <Announcements></Announcements>
     </>
   );
 }
